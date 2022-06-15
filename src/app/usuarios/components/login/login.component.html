@@ -1,0 +1,19 @@
+<div class="container">
+    <form #formLogin="ngForm" (ngSubmit)="onLogin(formLogin)">
+        <div class="form-group">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" 
+                 aria-describedby="emailHelp" placeholder="Ingrese el email"
+                 name="email" ngModel required>
+          <small id="emailHelp" class="form-text">Nunca compartiremos su correo electronico</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" 
+                 placeholder="Ingrese su contraseña"
+                 name="password" ngModel required>
+          <h1></h1>
+        </div>
+        <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+      </form>
+</div>
